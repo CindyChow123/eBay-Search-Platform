@@ -1,0 +1,33 @@
+.row{
+    margin-bottom: 15px;
+}
+#submit-btn{
+    margin-right: 30px;
+}
+#search-form{
+    max-width: 450px;
+}
+.material-symbols-outlined{
+    transform: translateY(6px);
+}
+#nav-tab{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#detail-btn{
+    margin-bottom: 20px;
+}
+.detail-btn{
+    margin-bottom: 20px;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+/* .carousel-item{
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+}  */

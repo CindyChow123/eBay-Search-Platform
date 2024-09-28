@@ -1,0 +1,45 @@
+<div *ngIf="tableData.length != 0 && showList">
+  <div class="d-flex justify-content-end detail-btn" id="wish-detail-btn">
+    <button type="button" class="btn btn-light" [disabled]="curDetail==''" (click)="toPreDetail()">Detail ></button>
+  </div>
+  <div class="table-responsive mx-2" style="padding: 0 20px;">
+    <table class="table table-dark table-striped" style="padding: 0 20px;">
+      <thead>
+          <tr>
+              <th scope="col" *ngFor="let head of tableHeads">{{head}}</th>
+          </tr>
+      </thead>
+      <tbody>
+            <tr *ngFor="let data of tableData;index as i;" [class.table-light]="data.itemId==curDetail">
+                <th scope="row">{{data.idx+1}}</th>
+                <td><a href="{{data.img}}" target="_blank"><img src="{{data.img}}" width="100" height="100"></a></td>
+                <td>
+                  <a class="link" (click)="toDetail(data.itemId, data.idx, data.shippingInfo)" [matTooltip]="data.name">{{data.name | formatName}}</a></td>
+                <td>{{formatPrice(data.price)}}</td>
+                <td>{{formatShip(data.ship)}}</td>
+                <td>
+                  <button type="button" class="btn btn-light" (click)="removeCart(i)">
+                    <span class="material-symbols-outlined" [class.gold]="data.inWish == 'remove_shopping_cart'" style="line-height: 0.5;">
+                      {{data.inWish}}
+                    </span>
+                  </button>
+                </td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Total Shopping</td>
+              <td>
+                ${{totalprstr}}
+              </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+  
+</div>
+<app-detail-page *ngIf="showDetail" [data]="detailData" [root_url]="root_url" [wishids]="wishids" (goBackEvent)="goBack($event)"
+(addEvent)="addCart()" (removeEvent)="removeCart($event)"
+(itemidEvent)="setDetail($event)"></app-detail-page>

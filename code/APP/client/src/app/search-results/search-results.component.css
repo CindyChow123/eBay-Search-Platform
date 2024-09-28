@@ -1,0 +1,15 @@
+.gold{
+    color: rgb(169, 125, 17);
+}
+/*But this works, don't need to go to bootstrap _pagination.scss to modify*/
+.page-link:hover{
+    text-decoration: underline;
+}
+.table-light{
+    --bs-table-striped-color:#fff;
+    --bs-table-color:#fff;
+    --bs-table-hover-color: #fff;
+    --bs-table-striped-bg:#bfc0c2;
+    --bs-table-bg:#bfc0c2;
+    --bs-table-hover-bg:#b0b2b6;
+}

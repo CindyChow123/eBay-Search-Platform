@@ -1,0 +1,68 @@
+.detail-tabs{
+    margin-bottom: 10px;
+}
+.propic{
+    border: 10px solid #323238;
+    border-radius: 5px;
+}
+.seller-percent{
+    position: absolute;
+    transform: translateX(20%);
+}
+.material-symbols-outlined{
+    font-size: 36px;
+}
+.photoimg{
+    border: 10px solid #323238;
+    /* box-sizing: border-box; */
+    width: 100%;
+}
+.row{
+    margin-bottom: 8px;
+}
+.photoa{
+    padding-left: 0;
+    padding-right: 0;
+}
+.similarProPic{
+    padding: 20px 15px;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+}
+.similarText{
+    /* line-height: 0.7; */
+    padding: 20px 20px 20px 20px;
+}
+.similarText p{
+    margin: 0;
+}
+.gold{
+    color: rgb(169, 125, 17); 
+}
+.modal{
+    --bs-modal-width: 400px
+}
+/* "table Stacked to horizontal" prompt. ChatGPT, 5 Nov. version, OpenAI, 9 Mar. 2023, chat.openai.com/chat.*/
+@media (max-width: 767px){
+    .table-horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+    .table-horizontal thead {
+        display: none;
+    }
+    .table-horizontal tbody {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .table-horizontal tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .table-horizontal tbody td {
+        flex: 1;
+        min-width: 0;
+    }
+}
