@@ -7,8 +7,8 @@ const app = express()
 // const port = 3000
 app.use(express.static('client/dist/client/'))
 
-let app_id = 'XinyiZho-SearchEv-PRD-a72bbdc3d-76241c35'
-let cert_id = 'PRD-72bbdc3d190e-2d7f-4ff0-a9e2-2b55'
+let app_id = 'XinyiZho-SearchEv-PRD-id'
+let cert_id = 'eBay-Production-Client-Secret-(Cert-ID)'
 const client_id = app_id;
 const client_secret = cert_id;
 const oauthToken = new OAuthToken(client_id, client_secret);
@@ -100,7 +100,7 @@ app.get('/getAllDetail', (req, res)=>{
         imgSize:"huge",
         num:8,
         searchType:"image",
-        key:"AIzaSyCezwDBIreFflDllPS8GRIUjDLE-84bvSc"
+        key:"google-API-Key"
     }
     let payload_details = {
         callname:'GetSingleItem',
