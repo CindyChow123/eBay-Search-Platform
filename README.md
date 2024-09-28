@@ -1,12 +1,28 @@
-# Web Technology Course Fall 2023:
-Please refer to the linked videos for the outcome of each project.
-## Homework1
-In this exercise, I reprodeced a webpage by following screenshots.
-## Homework2
-In this exercise, I created a **webpage** that allows users to search items for sale on eBay.com using their API, and the results will be displayed in a tabular format.
-## [Homework3](https://drive.google.com/file/d/1sSTR0R-WTyFi5jCSXycvASidGNVeg9Qm/view?usp=drive_link)
-In this exercise I created a **webpage** that allows users to search for products using the eBay API and display the results on the same page below the form using Node.js, Express, Bootstrap and Angular. It includes three parts: search form, result table and item info card.
-Your webpage should also support adding products to and removing products from the wish list and sharing products info using Facebook.
-## [Homework4](https://drive.google.com/file/d/11BVAnmuu9EcidJN905IGWGEqsfTU3QD8/view?usp=drive_link)
-In this exercise, I developed an **Android application**, which allows users to search for the products on eBay, look at information
-about them, save some to Wishlist and post on Facebook.
+# [eBay Search Platform](https://drive.google.com/file/d/1sSTR0R-WTyFi5jCSXycvASidGNVeg9Qm/view?usp=drive_link)
+## Objective:
+
+Gain practical experience using Ajax, JSON, HTML5, Bootstrap, Angular, and MongoDB to create responsive web applications.
+
+Implement the backend using Node.js with the Express framework and integrate popular APIs like eBay.
+
+Deploy the project to cloud platforms such as AWS, GCP, or Azure.
+
+## Project Summary:
+
+Front-End: Build a responsive user interface using **Angular, HTML5, and Bootstrap** to allow users to search for products via the eBay API.
+
+Back-End: Use **Node.js and Express** to create the backend, which serves the frontend and handles API requests.
+
+Database: Implement **MongoDB** to store a product wish list.
+
+Cloud Deployment: Host the application and database on a cloud platform (**AWS**).
+
+## Core Features:
+
+A search form for querying products.
+
+A result table to display product results from the eBay API.
+
+An item info card that shows detailed product information.
+
+A wishlist feature that allows adding/removing items and sharing product info on Facebook.
